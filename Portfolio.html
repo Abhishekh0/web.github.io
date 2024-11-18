@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:5500/#contact -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    
+<link rel="stylesheet" href="./Portfolio_files/style.css"></head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="http://127.0.0.1:5500/#home" class="nav-link">Home</a>
+            <a href="http://127.0.0.1:5500/#about" class="nav-link">About</a>
+            <a href="http://127.0.0.1:5500/#education" class="nav-link">Education</a>
+            <a href="http://127.0.0.1:5500/#skills" class="nav-link">Skills</a>
+            <a href="http://127.0.0.1:5500/#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <img src="./Portfolio_files/WhatsApp Image 2024-11-15 at 10.34.27 PM.jpeg" alt="Student Photo" class="student-photo">
+            <h1>Hello, I'm <span class="highlight">Abhishekh</span></h1>
+            <p>A Computer Science &amp; Engineering student passionate about coding and AI development.</p>
+            <div class="home-buttons">
+                <a href="http://127.0.0.1:5500/#contact" class="btn">Contact Me</a>
+                <a href="http://127.0.0.1:5500/Resume%20(1).pdf" download="" class="btn">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a third-year student of Computer Science and Engineering at Vivekananda college of engineering and Technology . I have a keen interest in Machine learning,Generative AI Tools. I'm constantly exploring ways to innovate and build impactful solutions.
+        </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <ul class="education-list">
+            <li>Bachelor of Technology (Computer Science) - Vivekananda Engineering and Technology (Pursuing)</li>
+            <li>Diamond PU college Basavakalyan(2020-2022)</li>
+            <li>SSLC - Govt High School Chandikapur (2019-2020)</li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">Python</div>
+            <div class="skill-card">C</div>
+            <div class="skill-card">C++</div>
+            <div class="skill-card">Latex</div>
+            <div class="skill-card">Database Management</div>
+            <div class="skill-card">Problem Solving</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required="">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required="">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required=""></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Abhishekh. All rights reserved.</p>
+    </footer>
+
+    <script src="./Portfolio_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
